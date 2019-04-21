@@ -10,8 +10,7 @@ export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
   setClasses() {
     const classes = {
       todo : true,
@@ -20,10 +19,10 @@ export class TodoItemComponent implements OnInit {
     return classes;
   }
 
-  onChange(todo){
+  onChange(todo) {
     todo.completed = !todo.completed;
   }
-  onDelete(todo){
+  onDelete(todo) {
 
   }
 }
